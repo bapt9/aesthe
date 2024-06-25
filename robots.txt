@@ -1,0 +1,16 @@
+User-agent: *
+Allow: /*.jpg
+Allow: /*.jpeg
+Allow: /*.png
+Allow: /*.webp
+Allow: /*.css
+Allow: /*.js
+
+Disallow: /*wp-admin*
+Disallow: /*wp-includes*
+Disallow: /*prendre-rdv*
+Disallow: /*egerie*
+Disallow: /*remerciement*
+Disallow: /*?s=*
+
+Sitemap: https://aesthe.com/sitemap_index.xml

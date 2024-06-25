@@ -1,0 +1,55 @@
+
+.single-post h3 { font-weight: 400; margin: 50px 0 25px; width: var(--col-4); }
+.single-post h1 { @extend .h1 }
+
+.single-post { overflow-x: hidden }
+.single-post .post-content { margin: 0 0 100px; }
+
+// .single-post .wp-block-image { margin: 120px 0 90px; }
+.single-post .wp-block-image img { width: var(--col-6); height: calc(.7*var(--col-6)); }
+// .single-post .wp-block-image figure:before { content: ''; display: block; width: var(--col-4); height: var(--col-4); background-color: $blueLight; border-radius: 100%; position: absolute; top: -20%; right: -25%; }
+
+
+
+/*----------- Post top block ----------*/
+
+.postTop { display: flex; justify-content: space-between; margin: 90px auto; }
+.postTop > div { width: var(--col-6); }
+.postTop__toBlog { display: inline-block; margin:-20px 0 80px 20px ;}
+.postTop__toBlog svg:nth-of-type(2) { position: absolute; top: 40px; left: -20px; }
+.postTop__tags a { display: inline-block; padding: 6px 15px; border-radius: 90px; border: 1px solid $nudeDarker; font-size: 12px;  }
+.postTop h1 { margin: 30px 0 50px; width: var(--col-5); }
+
+.postTop .cta + .cta { margin: 0 0 0 30px; }
+.postTop__social { display: flex; align-items: center; margin: 55px 0 0; }
+.postTop__social p { margin: 0 20px 0 0; }
+.postTop__social a { display: block; width: 32px; height: 32px; margin: 0 10px 0 0;}
+
+
+
+
+@media(max-width: 1000px){
+	.single-post h3 { margin: 50px 0 25px; width: var(--col-8); }
+	.single-post .wp-block-image { margin: 100px 0 90px; }
+	.postTop {  margin: 40px auto; }
+	.postTop { flex-wrap: wrap; }
+	.postTop > div { width: var(--wrapper); }
+	.postTop__content { display: flex; flex-direction: column; }
+	.postTop__toBlog { align-self: center; margin:	-20px 0 60px; }
+	.postTop h1 {width: var(--col-10); margin: 20px 0 30px; }
+	.postTop__social { margin: 30px 0 0; }
+	.postTop__img { margin: 30px 0 0; }
+
+}
+
+
+
+@media(max-width: 600px){
+	.single-post h3 { margin: 25px 0 10px; width: var(--wrapper); }
+	.single-post .wp-block-image { margin: 60px 0 40px; }
+	.single-post .wp-block-image img { width: var(--col-9); height: calc(.7*var(--col-9)); }
+	// .single-post .wp-block-image figure:before { position: absolute; top: -15%; right: -18%; }
+	.postTop {  margin: 0 auto; }
+	.postTop__toBlog { align-self: center; margin:	-20px 0 20px; }
+	div.postTop__img { width: 100vw; margin: 30px calc(-1*var(--leftMargin)) 0; }
+}

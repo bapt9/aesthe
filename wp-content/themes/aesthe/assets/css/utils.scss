@@ -1,0 +1,52 @@
+/* Letter-spacing: 1000 Photoshop/Illustrator = 1em */
+
+/*
+// Au chargement avant scroll dans Safari
+iPhone SE 320x460
+iPhone 6-7 375x560
+iPhone X 375x609
+*/
+
+
+
+
+
+html.widthFixedScrollbar { width: calc(100vw - 0px); overflow-x: hidden }
+
+
+.flexJcSB { display: flex; justify-content: space-between; flex-wrap: wrap }
+@media (min-width: 1001px) {
+    .flexJcSB.half > * { width: calc((100% - var(--gutter))/2) }
+    .flexJcSB.third > * { width: calc((100% - 3*var(--gutter))/4) }
+    .flexJcSB.fourth > * { width: calc((100% - 2*var(--gutter))/3) }
+}
+
+.flexAlignLeft { display: flex; flex-direction: row; flex-wrap: wrap }
+@media (min-width: 1001px) {
+    .flexAlignLeft.half > * { width: calc((85% - var(--gutter))/2) }
+    .flexAlignLeft.third > * { width: calc((85% - 3*var(--gutter))/4) }
+    .flexAlignLeft.fourth > * { width: calc((85% - 2*var(--gutter))/3) }
+}
+
+
+
+
+
+/* <div style="--aspect-ratio:16/2"><img src="popup-nl-ralph.png"></div> */
+[style*='--aspect-ratio'] { aspect-ratio: var(--aspect-ratio) }
+[style*='--aspect-ratio'] * { width: 100%; height: 100%; object-fit: cover }
+
+@supports not (aspect-ratio) { 
+    [style*='--aspect-ratio']:before { float: left; content: ''; padding-top: calc(1/(var(--aspect-ratio))*100%) }
+    [style*='--aspect-ratio']:after { display: block; content: ''; clear: both; }
+    [style*='--aspect-ratio'] > * { position: absolute; top: 0; left: 0; }
+}
+
+
+@media (min-width: 1001px) { .smartphoneOnly { display: none } .tabletPortraitOnly { display: none } }
+@media (min-width: 601px) and (max-width:  1000px) { .smartphoneOnly { display: none } .desktopOnly { display: none } }
+@media (max-width: 600px) { .desktopOnly { display: none } .tabletPortraitOnly { display: none } }
+
+
+
+

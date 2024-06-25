@@ -1,0 +1,126 @@
+// BASE PAGE TARIF
+.slug-tarifs .submenuSiblings h1 {
+    text-align: center;
+    margin: 3rem 0 !important;
+    color: white;
+    max-width: inherit;
+    font-size: 225%;
+}
+
+body.page-template-default.slug-tarifs {
+    background-color: #424eb1;
+}
+
+.slug-tarifs .titre-cta {
+    margin: inherit;
+}
+
+.slug-tarifs h2 {
+    text-align: center;
+    color: white;
+    font-weight: 500;
+    margin: 0;
+    margin: 0 0 1rem 0;
+    font-size: 180%;
+    letter-spacing: 0px;
+    @media (min-width: 1000px) {
+        padding-top: 2rem;
+        text-align: inherit;
+    }
+}
+
+//BLOCK CARD TARIF
+.tarifsCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    box-shadow: 3px 2px 4px 2px rgb(0 0 0 / 23%);
+    border: solid 1px #424eb1;
+    border-radius: 16px;
+    color: #424eb1;
+    margin-bottom: 1.5rem;
+    transition: transform ease-in-out;
+    &__col {
+        @media (min-width: 1000px) {
+            width: 30%;
+            height: fit-content;
+        }
+    }
+    &.on {
+        transform: scale(1.07);
+        transform-origin: center center;
+    }
+    &__title {
+        text-align: center;
+        padding: 20px 0px 20px 0px;
+        font-family: fleya;
+        color: #424eb1;
+        margin: 0px 5px;
+        max-width: 99%;
+    }
+    &__offers {
+        // display: none;
+        width: 90%;
+        max-height: 0em;
+        overflow: hidden;
+        transition: max-height 0.4s;
+        &.on {
+            // display: block;
+            max-height: 100rem;
+        }
+    }
+    &__offer {
+        display: flex;
+        justify-content: space-between;
+        padding: 7px 15px;
+        margin-bottom: 18px;
+        &__title {
+            width: 95%;
+        }
+        &.linked {
+            background-color: white;
+            box-shadow: 3px 2px 4px rgba(0, 0, 0, 14%);
+            border-radius: 16px;
+            border: 1px solid #424eb1;
+            transition: transform;
+            &:hover {
+                transform: scale(1.07);
+                transform-origin: center center;
+            }
+        }
+        &__separator {
+            width: 1.5px;
+            height: 70%;
+            background-color: #424eb1;
+            position: absolute;
+            right: 60px;
+            top: 15%;
+        }
+        &__price {
+            display: flex;
+            align-items: center;
+            max-width: 40px;
+        }
+    }
+}
+
+.tarifsCards {
+    @media (min-width: 1000px) {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+}
+
+button.button__offer {
+    background-color: #424eb1;
+    color: white;
+    font-family: fleya;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    position: relative;
+    left: 32%;
+}

@@ -1,0 +1,46 @@
+{
+    "key": "group_62d7ed975317e",
+    "title": "Cartes tarifs",
+    "fields": [
+        {
+            "key": "field_62d7edb18d608",
+            "label": "Carte tarif",
+            "name": "tarif_card",
+            "type": "post_object",
+            "instructions": "Ajouter les cartes tarifs par bloc",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "tarifs"
+            ],
+            "taxonomy": "",
+            "allow_null": 0,
+            "multiple": 1,
+            "return_format": "object",
+            "ui": 1
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/cartes-tarifs"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "modified": 1658319925
+}

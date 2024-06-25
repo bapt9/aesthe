@@ -1,0 +1,39 @@
+.retailMapBlock { display: flex; justify-content: space-between; flex-wrap: wrap;  }
+.retailMapBlock__infos, .retailMapBlock__map { width: var(--col-6); height: var(--col-6); z-index: 0; }
+.retailMapBlock__infos { overflow-y: scroll; }
+.retailMapBlock__item { display: flex; justify-content: space-between; flex-wrap: wrap; padding: 0 0 30px; border-bottom: 1px solid black; }
+.retailMapBlock__item + .retailMapBlock__item { margin: 25px 0 0; }
+.retailMapBlock__item h4 { width: var(--col-4); margin: 0 0 20px; color: black;}
+.retailMapBlock__text { width: var(--col-3); }
+.retailMapBlock__label { font-weight: 700; margin: 0 0 10px; }
+.retailMapBlock__text p + p { margin: 0; }
+
+
+@media(max-width: 1000px){
+	.retailMapBlock { margin: 60px 0 0; }
+	.retailMapBlock__infos{ width: var(--wrapper); height: auto;  }
+	.retailMapBlock__item { justify-content: flex-start; margin: 0 0 30px; }
+	.retailMapBlock__item h4 { width: var(--wrapper); padding: 0 var(--col-4) 0 0; }
+	.retailMapBlock__text { width: var(--col-4); }
+	.retailMapBlock__map { width: var(--wrapper); height: 500px;
+		max-height: var(--wrapper);
+		min-height: 320px;}
+
+}
+
+
+@media(max-width: 800px){
+	.retailMapBlock__text { width: var(--col-5); }
+}
+
+
+@media(max-width: 600px){
+	.retailMapBlock p { font-size: 16px; }
+	.retailMapBlock__text { width: var(--wrapper); }
+	.retailMapBlock__text + .retailMapBlock__text { margin-top: 10px; }
+	//.retailMapBlock__map { height: 100% }
+}
+
+#map{
+	height: 100%;
+}

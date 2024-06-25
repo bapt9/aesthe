@@ -1,0 +1,127 @@
+.glsr {
+  .glsr-reviews-wrap {
+    grid-gap: var(--gutter);
+    gap: var(--gutter)!important;
+    .glsr-reviews{
+      grid-gap: var(--gutter);
+      gap: var(--gutter);
+    }
+  }
+  .custom-review{
+    padding: 45px 55px;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
+
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    flex-wrap: wrap;
+
+    @media (max-width: 800px){
+      padding: var(--gutter);
+    }
+    &:nth-child(3n+1){
+      &::before{
+        background: $blue;
+      }
+    }
+    &:nth-child(3n+2){
+      &::before{
+        background: $blueLight;
+      }
+    }
+    &:nth-child(3n){
+      &::before{
+        background: $orange;
+      }
+    }
+    &::before{
+      content: '';
+      width: 160px;
+      height: 160px;
+      display: block;
+      position: absolute;
+      top: 50%;
+      border-radius: 50%;
+      right: 100%;
+      transform: translate(14px, -50%);
+      @media (max-width: 800px){
+        content: none;
+      }
+    }
+    &__main{
+      width: 45%;
+      @media (max-width: 800px){
+        width: 100%;
+        margin-bottom: var(--gutter);
+      }
+    }
+    &__more{
+      width: 40%;
+      @media (max-width: 800px){
+        width: 100%;
+      }
+    }
+    .glsr-star{
+      width: 19px;
+      height: 19px;
+      background-size: 19px;
+      margin-right: 2px;
+      filter: saturate(2500%) brightness(1.1);
+    }
+    &__author{
+      display: flex;
+      margin-bottom: 9px;
+    }
+    &__rating{
+      display: flex;
+      margin-bottom: 20px;
+      font-size: 14px;
+      .glsr-review-rating{
+        margin-right: 8px;
+
+      }
+    }
+    .avis-verifie{
+      margin-bottom: 16px;
+    }
+    &__content{
+      font-size: 14px;
+    }
+    &__tech-meds{
+      font-size: 14px;
+      li{
+        list-style: none;
+      }
+    }
+    .glsr-review-response {
+      padding: var(--gutter);
+      margin-top: var(--gutter);
+    }
+  }
+  .glsr-pagination{
+    margin-bottom: var(--gutter);
+    .navigation{
+      display: flex;
+      justify-content: center;
+      font-size: 20px;
+      text-transform: lowercase;
+      color: $blue;
+      @media (max-width: 800px){
+        font-size: 16px;
+      }
+    }
+    .nav-links{
+      a{
+        text-decoration: underline;
+      }
+      &>*{
+        margin: 0 2px;
+      }
+    }
+  }
+}
+.page-numbers{
+  &.prev, &.next{
+    display: none;
+  }
+}

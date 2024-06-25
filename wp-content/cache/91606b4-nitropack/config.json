@@ -1,0 +1,34 @@
+{
+    "config_path": "aaf751d7e46413aa8bf7012263e47bc7",
+    "aesthe.com": {
+        "siteId": "NdxaSnNKSkHZYWYGbBmGvygOKEqLsJWq",
+        "siteSecret": "mXN7tgH6skeBWS8SpJeIRqSsGnrf2EZZ9YgOEjCNKJULqLRSEJUHoaZcEtwDV5kt",
+        "blogId": 1,
+        "compression": false,
+        "webhookToken": "3dc2264979e958610407659b299c47f0",
+        "home_url": "https:\/\/aesthe.com",
+        "admin_url": "https:\/\/aesthe.com\/wp-admin\/",
+        "hosting": "unknown",
+        "alwaysBuffer": true,
+        "isEzoicActive": false,
+        "isApoActive": false,
+        "isNginxHelperActive": false,
+        "isLateIntegrationInitRequired": false,
+        "isDlmActive": false,
+        "isWoocommerceCacheHandlerActive": false,
+        "isWoocommerceActive": false,
+        "isAeliaCurrencySwitcherActive": false,
+        "isGeoTargetingWPActive": false,
+        "dlm_downloading_url": null,
+        "dlm_download_endpoint": null,
+        "pluginVersion": "1.10.3",
+        "options_cache": {
+            "cache_handler_cache_handler": false,
+            "woocommerce_default_customer_address": false,
+            "wc_aelia_currency_switcher": {
+                "ipgeolocation_enabled": null
+            }
+        },
+        "additional_domains": []
+    }
+}

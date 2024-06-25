@@ -1,0 +1,72 @@
+{
+    "key": "group_61145eb00cfa8",
+    "title": "Block: Blog (3 conseils)",
+    "fields": [
+        {
+            "key": "field_614a4770aaa22",
+            "label": "Titre bloc",
+            "name": "titre_bloc",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Les articles qui vous interesseront",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_61145ebfa5493",
+            "label": "Conseils",
+            "name": "conseils",
+            "type": "post_object",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "relevanssi_exclude": 0,
+            "post_type": [
+                "conseils",
+                "conseils-corps",
+                "conseils-epilation",
+                "conseils-medicales",
+                "conseils-detatouage",
+                "conseils-cheveux",
+                "actualites"
+            ],
+            "taxonomy": "",
+            "allow_null": 0,
+            "multiple": 1,
+            "return_format": "object",
+            "ui": 1
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/blog"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "modified": 1702656786
+}

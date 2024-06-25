@@ -1,0 +1,6 @@
+.right-stick{
+  img{
+    width: calc(100% + var(--leftMargin));
+    max-width: none;
+  }
+}

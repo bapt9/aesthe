@@ -1,0 +1,58 @@
+{
+    "key": "group_62176f283b428",
+    "title": "test",
+    "fields": [
+        {
+            "key": "field_62176f2d905b2",
+            "label": "nom test",
+            "name": "nom_test",
+            "type": "text",
+            "instructions": "tu dois taper un texte stp",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_62176f5f905b3",
+            "label": "deuxieme champs",
+            "name": "deuxieme_champs",
+            "type": "color_picker",
+            "instructions": "choisis ta couleur de texte",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/test"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "modified": 1645705401
+}

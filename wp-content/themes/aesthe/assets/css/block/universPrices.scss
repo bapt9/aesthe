@@ -1,0 +1,20 @@
+
+.universPrices { width: 100vw;  left:  calc(50% - 50vw); margin: 3em 0; display: flex; flex-wrap: wrap; justify-content: space-between; padding-right: var(--leftMargin); align-items: center; }
+.universPrices__img { width: 30vw; max-height: 45vw; }
+.universPrices__content { width: var(--col-8); color: $blue; }
+.universPrices__content .circle { display: none; }
+.universPrices__text { margin: 3em 0 3em calc(var(--col) + var(--gutter)); }
+.universPrices__content .cta { margin-left: calc(var(--col) + var(--gutter)) ; }
+
+
+
+@media(max-width: 600px) {
+	.universPrices{ padding: 0; }
+	.universPrices__img { /*width: 80vw; order: 2; max-height: unset; height: 80vw;*/ display: none; }
+	.universPrices__content { width: 100vw;  padding: 0 var(--leftMargin); /*order: 1;*/}
+	.universPrices__content .circle { display: block; width: 290px; height: 290px; top: 0; right: 0; }
+	.universPrices__content .circle::before { transform: translateX(12vw); }
+	.universPrices__text{ margin: 3em 0; }
+	.universPrices__content .cta { margin: 0 0 3em; }
+
+}

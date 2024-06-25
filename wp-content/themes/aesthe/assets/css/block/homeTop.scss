@@ -1,0 +1,100 @@
+
+
+.homeTop { width: 100vw; left:  calc(50% - 50vw); display:  flex;}
+.homeTop > svg { position: absolute; top: 80px; right: 0; z-index: 2; }
+.homeTop__image { width: 50%; height: calc(100vh - 80px)}
+.homeTop__text { position: absolute; top: 0; left: 0; text-align:  center; width:  50%; height: calc(100vh - 80px);display:  flex; flex-direction: column; align-items:  center;justify-content: center;}
+.homeTop__text .homeTop__logo { transform:  translateX(-0.3em) }
+.homeTop__title {margin-top: 1.2rem; font-size: 30px; text-transform: uppercase; letter-spacing:  1Px; font-weight:  300;line-height:  1.2; color:  #fff; }
+.homeTop__image--0 { background-size : cover;  background-color : #94b3c5;}
+.homeTop__image--1 { background-size : cover;}
+.homeTop + h2 { margin-top: 2.5em }
+.searchForm__text {text-align: left}
+
+@media (max-width:  1100px) {
+  .homeTop__text .homeTop__logo { width:  400px }
+  .homeTop__title { margin:  0px 0 40px; font-size: 24px }
+  .homeTop { padding: 0 30px }
+  // .homeTop__ctas .cta::after { top: calc(50% - 10px); right: 15px }
+}
+
+@media (max-width:  1000px) {
+  .homeTop__text .homeTop__logo { width:  300px; height:  80px}
+  .homeTop__title { margin:  20px 0 20px; font-size: 20px}
+  .homeTop__image {height: var(--col-8) }
+  .homeTop__circle { width: 120px}
+}
+
+@media (max-width:  600px) {
+  // .homeTop > svg { display: none }
+  .homeTop { padding: 0 0}
+  .homeTop__image--1 { background-size: cover; }
+  .homeTop__image { width: 100%; height: 24rem; object-fit: cover;
+    object-position: 15% 29%;
+  }
+  .homeTop__image.homeTop__image--0 {
+    display: none;
+  }
+  .homeTop__text {text-align:  center; width: auto; height: auto; padding: 1.5rem 1.5rem}
+  .homeTop__text .homeTop__logo { width: 180px }
+  // .homeTop__text .homeTop__logo path { fill: #000 }
+  .homeTop__title { font-size:  15px; margin: 0 0 20px 0}
+  // .homeTop__ctas .cta:first-of-type { margin: 0 }
+  .homeTop__searchForm {flex-direction: column-reverse !important; width: 90% !important;  padding: 0 !important; color: white !important}
+  .wrapper .homeTop {width : 100vw}
+  .gutenbergSection .homeTop { margin-top: 0;}
+  .searchForm__text {
+    text-align: left;
+    padding-top: 1rem;
+    font-size: 1rem;
+  }
+  #Livello_1 {
+    width: 80% !important;
+  }
+  .searchForm__get {
+
+    padding: 0.3rem;
+    
+  }
+}
+
+#Livello_1 {
+  width: 64%;
+}
+
+.homeTop__searchForm {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    color: white;
+    width: 70%;
+  }
+
+  .searchForm__get {
+    background-color: rgba(255, 255, 255, 0.7);
+    align-content: initial;
+    display: flex;
+    padding: 0.5rem;
+    margin-top: 1rem;
+    #form {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      input {
+        color: $greytext;
+      }
+      button {
+cursor: pointer;
+background: white;
+padding: 0.5rem;
+color: $greytext;
+font-weight: 500;
+      }
+      svg {
+        position: relative;
+        top: 8px;
+        transform: initial;
+      }
+    }
+
+  }

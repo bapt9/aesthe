@@ -1,0 +1,208 @@
+.zoneBlock{
+  .tns-nav{
+    display: none;
+  }
+  &__controls{
+    &__container{
+      margin-top: 40px;
+      border-bottom: 1px solid coral;
+      padding-bottom: 16px;
+      @media (max-width: 1000px){
+        margin-top: 25px;
+        overflow-x: scroll;
+        height: 43px;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+        &::-webkit-scrollbar {
+          display: none;
+        }
+      }
+    }
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    @media (max-width: 1000px){
+      width: max-content;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    li{
+      list-style: none;
+      cursor: pointer;
+      font-size: 20px;
+      font-weight: 700;
+      color: $blue;
+      padding: 0 5px;
+      margin: 0;
+      @media (max-width: 1450px){
+        font-size: 18px;
+      }
+      @media (max-width: 1000px){
+        text-decoration: underline;
+        margin-right: 5px;
+      }
+      @media (max-width: 600px){
+        font-size: 16px;
+      }
+      &:not(.active){
+        color: #ADADAD;
+        font-weight:400;
+        @media (max-width: 1000px){
+        text-decoration: none;
+      }
+      }
+    }
+  }
+  &__content{
+    &.tns-horizontal.tns-subpixel>.tns-item{
+      display: inline-flex;
+      justify-content: space-between;
+    }
+    .tns-nav{
+      display: none;
+    }
+    &.show-links{
+      .zone-lien{
+        @media (min-width: 601px){
+          background: rgba(0, 0, 0, 0.2);
+          border: 1px solid $orange;
+          border-radius: 7px;
+          pointer-events:none;
+        }
+      }
+    }
+  }
+  &__single{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 30px;
+    @media (max-width: 800px){
+      flex-wrap: wrap;
+    }
+    &__text{
+      width: var(--col-3) ;
+      margin-top: 55px;
+      @media (max-width: 1450px){
+        width: var(--col-4) ;
+        margin-top: 30px;
+      }
+      @media (max-width: 800px){
+        width: 100%;
+      }
+      p{
+        margin-bottom: 35px;
+      }
+    }
+    &__buttons{
+      display: flex;
+      flex-wrap: wrap;
+      .cta{
+        margin-top: 10px;
+        margin-right: 10px;
+      }
+    }
+    &__image{
+      width: var(--col-9) ;
+      @media (max-width: 1450px){
+        width: var(--col-8) ;
+      }
+      @media (max-width: 800px){
+        width: 100%;
+        order: -1;
+      }
+      .traces{
+        width: 100%;
+        @media (max-width: 600px){
+          display: none;
+        }
+      }
+      .photo{
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: -1;
+        width: auto;
+        @media (max-width: 600px){
+          position: unset;
+          width: 100%;
+          height: auto;
+          transform: none;
+          z-index: unset;
+        }
+      }
+      ul{
+        //display: none;
+        margin: 0;
+        list-style: none;
+        @media (min-width: 601px){
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          top: 0;
+          left: 0;
+          li{
+            position: unset;
+            font-size: 0px;
+          }
+        }
+        @media (max-width: 600px){
+          display: flex;
+          flex-wrap: wrap;
+          li{
+            position: unset;
+          }
+        }
+      }
+      .zone-lien{
+        @media (min-width: 601px){
+          position: absolute;
+          width: 13%;
+          height: 20%;
+          transform: translate(-50%, -50%);
+        }
+        @media (max-width: 600px){
+          top: unset!important;
+          left: unset!important;
+          display: inline-block;
+          background: $blue;
+          color: #fff;
+          margin-right: 10px;
+          margin-top: 10px;
+          font-size: 11px;
+          text-transform: uppercase;
+          padding: 8px 13px;
+          border-radius: 18px;
+          font-weight: 500;
+        }
+      }
+      .zone-point{
+        display: none;
+        position: absolute;
+        font-family: Fleya;
+        font-size: 5.2vw;
+        width: 7.1vw;
+        height: 7.1vw;
+        background: #fff;
+        border-radius: 5vw;
+        color: $blue;
+        text-align: center;
+        line-height: 6.2vw;
+        transform: translate(-50%, -50%);
+        @media (max-width: 600px){
+          display: block;
+        }
+      }
+    }
+    &__traces{
+      overflow: hidden;
+    }
+  }
+}
+
+
+
+h2 + .zoneBlock__controls { margin-top: 3em }
+// .zoneBlock { margin-bottom: 7em }

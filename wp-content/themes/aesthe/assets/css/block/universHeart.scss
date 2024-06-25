@@ -1,0 +1,19 @@
+
+.universHeart { width: 100vw; left:  calc(50% - 50vw); margin: 10vw auto 0; display: flex; justify-content: space-between; }
+.universHeart__img { width: 15vw; height: 35vw }
+.universHeart__wheel { padding: 80px 0; }
+.universHeart__wheel svg { width: 35vw;}
+.universHeart__img1 { align-self: flex-end; }
+
+@media(max-width: 1000px) {
+	.universHeart__img { width: 12vw; height: 45vw }
+	.universHeart__wheel { padding: 50px 0; }
+	.universHeart__wheel svg { width: 50vw;}
+}
+
+@media(max-width: 600px) {
+	.universHeart { justify-content: center; }
+	.universHeart__img { display: none;}
+	.universHeart__wheel { padding:  0; }
+	.universHeart__wheel svg { width: var(--wrapper)}
+}

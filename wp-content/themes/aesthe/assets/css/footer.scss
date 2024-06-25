@@ -1,0 +1,227 @@
+
+.newsletter { z-index: 3; color: #fff; padding:  3em 0; background: $blue; display: flex; align-items: flex-start; flex-wrap: wrap;}
+.newsletter::before { content: ''; position: absolute; top: 0; left: calc(50% - 50vw); width: 100vw; height: 100%; background: $blue}
+.newsletter__main {
+	width: var(--col-4) ;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	@media(max-width: 1400px){
+		// width: 100%;
+		margin-bottom: 20px;
+	}
+}
+.newsletter__main__smallTitle { color:  #fff; letter-spacing: 1px; font-weight:  700; font-size: 60%; text-transform: uppercase; }
+.newsletter__main p:not(.newsletter__main__smallTitle) { color: white; font-size: 250%; margin: 6px 0 0 0;
+	line-height: 1.2;
+	@media(max-width: 800px){
+		font-size: 220%;
+	}
+	@media(max-width: 600px){
+		font-size: 180%;
+	}
+}
+.newsletter__input {
+	// width: var(--col-6);
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	
+	/*
+	@media(max-width: 1400px){
+		width: var(--col-9);
+	}
+	*/
+	@media(max-width: 800px){
+		width: 100%;
+		margin-bottom: 20px;
+	}
+}
+.newsletter__input p {
+	font-size: 60%;
+	opacity: .4;
+	margin-bottom: 6px;
+}
+.newsletter__input input {
+	font-size: 250% ;
+	line-height: 1.2;
+	@media(max-width: 800px){
+		font-size: 220%;
+	}
+	@media(max-width: 600px){
+		font-size: 180%;
+		width: 100%;
+	}
+}
+.newsletter__submit {
+	text-align:  right;
+	width: var(--col-2);
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	@media(max-width: 1400px){
+		width: var(--col-3);
+	}
+	@media(max-width: 800px){
+		width: 100%;
+		justify-content: flex-start;
+	}
+}
+
+.newsletter__input input::-webkit-input-placeholder { opacity: 0.5 }
+.newsletter__input input::-moz-placeholder { opacity: 0.5 }
+.newsletter__input input:-ms-input-placeholder { opacity: 0.5 }
+.newsletter__input input:-moz-placeholder { opacity: 0.5 }
+
+
+
+footer { z-index: 3; color: #fff; padding:  4em 0}
+footer:before { content: ''; position:  absolute; top:  0; left:  calc(50% - 50vw); width:  100vw; height:  100%; background:  $purple; }
+footer .cta--ghost { border: white; }
+
+.footer__main{
+	align-items: flex-start;
+	@media(max-width: 1400px){
+
+	}
+}
+.footer__main ul { list-style: none; line-height:  1.8 }
+.footer__main > div:last-of-type {
+	width: var(--col-4);
+	text-align: right;
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-start;
+	flex-wrap: wrap;
+	@media(max-width: 1400px){
+		//width: 100%;
+	}
+	@media(max-width: 800px){
+		justify-content: flex-start;
+	}
+	&>*{
+		&:first-child{
+			margin-bottom: 18px;
+			@media(max-width: 1000px){
+				margin-bottom: 0;
+			}
+			@media(max-width: 360px){
+				margin-bottom: 9px;
+			}
+		}
+		&:last-child{
+			margin-left: 18px;
+			@media (max-width: 600px) { margin-left: 4px}
+		}
+	}
+
+}
+.footer__main > div:not(:last-of-type) { width: var(--col-2) }
+.footer__main li:first-of-type { margin: 0 0 5px 0 }
+
+
+.footer__foot { font-size: 70%; padding:  5em 0 2em }
+.footer__foot > div { text-align: right }
+.footer__foot > svg { width:  180px}
+.footer__foot > svg [fill] { fill: #fff }
+.footer__foot > svg [stroke] { stroke: #fff }
+.footer__foot div svg { margin: 0 5px 1em; vertical-align: middle }
+.footer__legal { position: absolute; right: 0; bottom: 10px;}
+
+
+
+@media (max-width: 1200px) {
+	.footer__main>div:not(:last-of-type) { width: calc(var(--col)*3.5); }
+	.footer__main>div:last-of-type { width: var(--col-3) }
+	footer { padding:  2em 0}
+}
+@media(max-width: 1000px){
+
+	.footer__main { flex-wrap: wrap; }
+	.footer__main ul a { font-size: 14px; }
+	.footer__main > div:last-of-type { width: var(--wrapper); text-align: left; margin: 2em 0 0; }
+	.footer__foot { padding:  3em 0 1em }
+	.footer__legal { bottom: 0;}
+}
+
+
+@media(max-width: 800px){
+	.footer__main>div:not(:last-of-type) { width: var(--col-6); margin: 0 0 2em 0; }
+	.footer__main > div:last-of-type {margin: 1em 0 0; }
+	.footer__foot { padding:  3em 0 3em; align-items: flex-end; }
+	.footer__foot > svg { width:  130px}
+	.footer__foot div svg { margin: 0 5px 0; vertical-align: middle;
+		height: 29px;
+		//width: 29px;
+	}
+	.footer__legal {width: var(--wrapper); left: 0; right: auto; bottom: -1em; text-align: center!important;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* activecampaign form */
+
+
+.newsletter__input form { text-align:left!important}
+.newsletter__input form ._form-title { display: none }
+.newsletter__input form ._html-code { display: none }
+
+.newsletter [for="fullname"] { display: none }
+.newsletter input[id="fullname"] { display: none!important}
+.newsletter [for="fullname"] + div { display: none }
+.newsletter [for="email"] { display: none}
+.newsletter ._form-content ._field-wrapper { display: flex; justify-content: space-between }
+
+
+.newsletter ._form-content { display: flex }
+.newsletter ._form-content button { display: flex; border: white; }
+
+
+._form-content button { @extend .cta, .cta--ghost; /*display: inline-block; font-size: 16px; padding: 10px 40px 10px 25px; border: 1px solid $orange; border-radius: 75px; color: white; text-decoration: none; background: $orange; background-color: white; color: $orange;*/}
+/*._form-content button:after { @ extend .cta:after; content:url(assets/img/ctaArrow.svg); position: absolute; top: calc(50% - 11px); right: 20px; width: 10px; height: 14px; content: url(assets/img/ctaArrow--ghost.svg) ;}
+@media(max-width: 600px){
+  ._form-content button { padding: 9px 36px 9px 17px }
+  ._form-content button:after { right: 15px; top: 11px } 
+}*/
+
+
+.newsletter ._error._below { position: absolute; top: 100%; left: 0}
+
+
+
+.newsletter ._form-thank-you { font-size: 250%;
+	line-height: 1.2;
+	@media(max-width: 800px){
+		font-size: 200%;
+	}
+	@media(max-width: 600px){
+		font-size: 150%;
+	}
+}
+
+
+
+@media (max-width: 600px) {
+	.newsletter { flex-direction: column; }
+	.newsletter__main { width: 100%}
+	.newsletter ._form-content {flex-direction: column; margin: 30px 0 0 0 }
+	.newsletter ._form-content button { margin: 5px 0 0 0}
+	.newsletter ._error._below { top: -20px; font-size: 10px}
+}
+
+
+
+
+
+
+

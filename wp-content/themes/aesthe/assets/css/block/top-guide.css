@@ -1,0 +1,65 @@
+.topGuide__image {
+  width: 90%;
+  height: 390px;
+}
+.topGuide__excerpt {
+  color: gray;
+  margin: 1rem 0;
+  width: 90%;
+}
+.topGuide__articles {
+  width: 30%;
+}
+
+.sommaire {
+  color: gray;
+  padding-top: 6rem;
+}
+.sommaire__top {
+  text-transform: uppercase;
+  font-family: fleya;
+  font-weight: inherit;
+  margin-bottom: 1rem;
+  font-size: 21px;
+}
+.sommaire h2 {
+  color: gray;
+  font-size: 100%;
+  letter-spacing: inherit;
+  margin: 0;
+}
+.sommaire p {
+  font-size: 84%;
+  margin: 0;
+}
+.sommaire li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 1rem;
+}
+.sommaire div {
+  margin-left: 1rem;
+}
+.sommaire span {
+  font-size: 58px;
+  font-family: fleya;
+}
+@media (max-width: 1000px) {
+  .sommaire {
+    display: none;
+  }
+}
+
+.article__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+@media (max-width: 1000px) {
+  .article__flex {
+    display: block;
+  }
+}

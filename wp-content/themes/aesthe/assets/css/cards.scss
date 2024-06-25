@@ -1,0 +1,187 @@
+// Card OK
+.greyfilter {
+  filter: grayscale(70%);
+  transform: scaleY(0.9) translateY(20px);
+  transition: transform 0.5;
+}
+.container {
+  &__cardNew {
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    overflow-x: hidden;
+  }
+}
+.cardNew {
+  width: 260px;
+  height: 275px;
+  max-height: 275px;
+  box-shadow: 6px 6px 10px #b1b1b1;
+  // border-radius: 16px !important;
+  overflow: hidden;
+  transition: 0.8s;
+  &.show {
+    height: 347px;
+    max-height: 347px;
+    transition: 0.8s;
+  }
+  &__slide {
+    &__1 {
+      // border-radius: 16px 16px 0px 0px;
+      background-size: cover;
+      height: 200px;
+      box-shadow: -3px 3px 10px #c8c3c3;
+      z-index: 1;
+      transition: 0.8s;
+      &.show {
+        transition: 0.8s;
+        transform: translateY(-100px);
+      }
+    }
+    &__2 {
+      transition: 0.8s;
+      background: white;
+      &.show {
+        transition: 0.8s;
+        transform: translateY(-100px);
+      }
+      &__head {
+        h3 {
+          text-transform: uppercase;
+          color: coral;
+          padding: 20px;
+          font-size: 1.1rem;
+        }
+      }
+      &__content {
+        color: $greytext;
+        padding: 0px 20px 0px 20px;
+        max-height: 0px;
+        opacity: 0;
+        transition: max-height 0.5s ease-out, opacity 0.8s;
+        &.show {
+          height: 300px;
+          max-height: 600px;
+          opacity: 1;
+          transition: max-height 0.5s ease-out, opacity 0.8s;
+        }
+        p {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+  &__circle {
+    width: 55px;
+    height: 55px;
+    position: absolute;
+    background: #ff4d56;
+    z-index: 2;
+    right: -23px;
+    bottom: -27px;
+    border-radius: 50px 50px 50px 50px;
+    transition: 0.6s;
+    &.show {
+      transition: 0.6s;
+      transform: translateX(40px);
+    }
+  }
+}
+
+.cta--card {
+  // right: 0%;
+  // top: 187px;
+  margin-top: 10px;
+  // position: fixed;
+
+  width: fit-content;
+  border: 2px solid $coral;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  background-color: $coral;
+  color: #fff;
+  padding: 8px 18px;
+  font-size: initial;
+  text-align: center;
+  @media (max-width: 1000px) {
+    // margin: 0 auto;
+    // width: 85%;
+  }
+  &:hover {
+    background-color: #fff;
+    color: $coral;
+  }
+}
+
+// slider
+
+// .single-tech-meds .wrapper .sliderCardsSlider,
+// .single-offre .wrapper .sliderCardsSlider {
+//   width: inherit;
+//   left: inherit;
+//   position: inherit;
+// }
+
+.sliderCardsSlider {
+  h2 {
+    color: #424eb1;
+    left: var(--leftMargin);
+  }
+}
+
+.sliderCards__controls {
+  position: absolute;
+  top: 125px;
+  li {
+    list-style: none;
+    width: 40px;
+    z-index: 2;
+    cursor: pointer;
+    // &:hover {
+    // background-color: rgba(255, 71, 80);
+    // border-radius: 50px;
+    // }
+    @media (max-width: 600px) {
+      display: none;
+    }
+  }
+  &.--next {
+    position: absolute;
+    left: 95vw;
+  }
+  &.--prev {
+    position: absolute;
+    left: 2vw;
+  }
+}
+
+.--next[aria-disabled="true"],
+.--prev[aria-disabled="true"] {
+  @media (min-width: 600px) {
+    display: none;
+  }
+}
+
+.--next[aria-disabled="false"],
+.--prev[aria-disabled="false"] {
+  @media (min-width: 600px) {
+    display: block;
+  }
+}
+
+// .cta--card a {
+//   display : block;
+// }
+// .cta--card.disabled a {
+//   display: none;
+// }
+
+.wrapper .sliderCardsSlider {
+  width: 100vw !important;
+  left: calc(50% - 50vw);
+  position: relative;
+  .sliderCards__controls {
+    position: absolute;
+    top: 69.5px;
+  }
+}

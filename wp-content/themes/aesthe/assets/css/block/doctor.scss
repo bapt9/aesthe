@@ -1,0 +1,32 @@
+.doctorBlock__parent > .wp-block-column { min-width: unset; }
+.doctorBlock { margin: 0 auto; width: var(--col-5); height: var(--col-5); min-width: 450px; min-height: 450px;   }
+.doctorBlock .circle { width: 60%; height: 60%; position: absolute; bottom: 10%; left: -4% }
+.doctorBlock__content { width: 100%; height: 100%; background-color: $nude; padding: 35px 70px; border-radius: 100%; color: $blue; text-align: center; display: grid; align-items: center; }
+.doctorBlock__content > div { margin: 0 0 40px }
+.doctorBlock__content img { width: 60px; height: 60px;  border-radius: 100%; margin: 0 auto 20px; }
+.doctorBlock__content h3 {  margin: 0 auto 15px; font-family: fleya; font-weight: 300; }
+
+
+@media(max-width:  1000px){
+	.doctorBlock { margin: 0 auto 40px; width: var(--col-5); height: var(--col-5); min-width: 450px; min-height: 450px;   }
+	.doctorBlock__parent { flex-wrap: wrap; }
+	.doctorBlock__parent .wp-block-column { flex-basis: 80%!important; margin: 0 auto; }
+}
+
+
+@media(max-width:  800px){
+	.doctorBlock__parent .wp-block-column { flex-basis: 100%!important;  }
+}
+@media(max-width:  500px){
+	.doctorBlock__parent { width: 100vw; left: calc(50% - 50vw); overflow: hidden }
+	.doctorBlock__parent > .wp-block-column:not(:first-of-type) p { width: var(--wrapper); margin: auto; }
+	.doctorBlock { width: 100%; height: 100vw; min-width: auto; min-height: auto; transform-origin: 50% 50%;   }
+	.doctorBlock__content > div { width: var(--wrapper); margin: 0 auto; padding: 0 20px}
+	.doctorBlock .circle { display: none; }
+
+	.doctorBlock__content { padding: 35px 20px; font-size: 12px}
+}
+@media(max-width:  360px){
+	.doctorBlock__content { padding: 20px 10px;}
+	.doctorBlock__content > div { padding: 0 10px;}
+}

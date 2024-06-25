@@ -1,0 +1,96 @@
+.faqBlock {
+	margin-top: inherit;
+	left: calc(50% - 50vw);
+	width: 100vw;
+	padding: 2rem 0;
+	h2 {
+		font-family: inherit;
+		color : #424EB1;
+		text-transform: uppercase;
+		font-size: 180%;
+		padding: 1rem 0;
+	}
+	&__head {
+		left: calc(50% - 50vw);
+		width: 100vw;
+	}
+}
+
+.faqBlock ul {
+	list-style: none;
+	align-items: center;
+	justify-content: center;
+}
+
+.faqBlock li {
+	text-align: center;
+	margin: 1rem 0;
+	padding: 10px;
+	border : 2px solid #424EB1;
+	border-radius: 5px;
+		&:after {
+				content: "\f067";
+				position: absolute;
+				top: 14px;
+				right: 14px;
+				/* width: 23px; */
+				-webkit-transform-origin: center;
+				transform-origin: center;
+				font-family: "Font Awesome 5 Free";
+				font-weight: 600;
+				color: #424EB1;
+			}
+}
+
+.faqBlock li.on {
+	background-color: #424EB1;
+	color: white;
+
+	&:after {
+		content: "\f068";
+		position: absolute;
+		top: 14px;
+		right: 14px;
+		/* width: 23px; */
+		-webkit-transform-origin: center;
+		transform-origin: center;
+		font-family: "Font Awesome 5 Free";
+		font-weight: 600;
+		color: white;
+	}
+}
+
+.faqBlock li div {
+	margin: 15px 0 0;
+	display: none
+}
+
+.faqBlock li.on div {
+	display: block;
+	text-align: initial;
+    padding: 0 1rem;
+}
+
+.faqBlock li.on h3 {
+	color: white;
+}
+
+.faqBlock h3 {
+	font-family: fleya;
+	color: #424EB1;
+}
+
+@media(max-width: 1000px) {
+
+	.faqBlock li h3 {
+		font-family: fleya;
+		color: #424EB1;
+		text-align: initial;
+		padding-right: 1rem;
+	}
+
+	section.faqBlock {
+		padding: 1.5em 0 1em;
+	}
+
+}

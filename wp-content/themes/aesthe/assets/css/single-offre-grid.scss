@@ -1,0 +1,369 @@
+  // Design V2
+  
+  .wrapper .offreProduits__imgWrap img {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .offreBlock {
+    @media (min-width: 1000px) {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+  .offreBlock {
+    &__consultation {
+      z-index: 1;
+    }
+    // font-size: 1.2rem;
+    &__rond {
+      &__web {
+        display: none;
+        @media (min-width: 1000px) {
+          display: block;
+          position: absolute;
+          left: 56rem;
+          bottom: 117px;
+          width: 400px;
+          height: 400px;
+          background-color: #fff5ed;
+          border-radius: 50%;
+          right: -5rem;
+        }
+      }
+      &__smartphone {
+        position: absolute;
+        left: -145px;
+        bottom: 7px;
+        width: 300px;
+        height: 300px;
+        background-color: $nude;
+        border-radius: 50%;
+        @media (min-width: 1000px) {
+          display: none;
+        }
+      }
+    }
+    &__top {
+      flex-direction: column;
+      @media (min-width: 1000px) {
+        display: flex;
+        flex-direction: row;
+      }
+    }
+    &__imgWrap {
+      height: 10rem;
+      @media (min-width: 1000px) {
+        height: 35rem;
+        // width: var(--col-7);
+        padding: 2rem 2rem 2rem 4.3rem;
+      }
+    }
+    &__titre {
+      @media (max-width: 1000px) {
+        position: relative;
+        margin: 0 auto;
+        width: var(--wrapper);
+      }
+      @media (min-width: 1000px) {
+        // width: var(--col-6);
+        padding-right: 4.3rem;
+      }
+    }
+    &__titre h1 {
+      color: coral;
+      padding-right: 2rem;
+      font-family: 'Avenir LT Std';
+      text-transform: uppercase;
+    }
+    h1 {
+      @media (min-width: 1000px) {
+        padding-top: 6px;
+      }
+    }
+    .tns-nav {
+      display: none;
+    }
+    &__controls {
+      li {
+        text-transform: uppercase;
+        list-style: none;
+        cursor: pointer;
+        color: white;
+        background-color: coral;
+        padding: 4px 10px 1px 9px;
+        margin: 0 0.4rem 0.4rem 0;
+        font-size: 130%;
+        @media (max-width: 1450px) {
+        }
+        @media (max-width: 1000px) {
+        }
+        @media (max-width: 600px) {
+        }
+        &:not(.active) {
+          color: coral;
+          background-color: white;
+          border: 1.5px solid coral;
+          font-weight: 400;
+  
+          @media (max-width: 1000px) {
+            text-decoration: none;
+          }
+        }
+      }
+      &__container {
+        ul {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: stretch;
+        }
+        span {
+          color: #9e9e9e;
+          // font-size: 14px;
+        }
+        @media (max-width: 1000px) {
+          //
+        }
+      }
+    }
+    &__content {
+      h2 {
+        color: #5c5b5b;
+        margin: 0;
+        font-size: 1.2rem;
+        letter-spacing: 0px;
+      }
+      span {
+        font-weight: 600;
+        font-size: 1.3rem;
+      }
+    }
+    &__single {
+      color: #5c5b5b;
+      padding: 01rem 0;
+      margin-block-start: 1rem;
+      p {
+        -webkit-margin-before: 1rem;
+        // font-size: 1.2rem;
+        @media (min-width: 1000px) {
+          width: var(--col-5);
+        }
+      }
+      &__button {
+        color: white;
+        background-color: coral;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        z-index: 3;
+        height: 4.5rem;
+        text-transform: uppercase;
+        padding: 26px;
+        display: none;
+        font-weight: 500;
+        font-size: 1.2rem;
+        @media (min-width: 1000px) {
+          position: absolute;
+          width: 75%;
+          height: 3.5rem;
+          text-transform: uppercase;
+          padding: 12px;
+          bottom: 32px;
+        }
+        &.on {
+          display: block;
+          @media (min-width: 1000px) {
+            display: flex;
+            justify-content: center;
+            font-size: 150%;
+          }
+        }
+      }
+      &__tarif {
+        font-weight: bold;
+      }
+      &__titre {
+        font-weight: lighter;
+        text-transform: uppercase;
+      }
+      }
+      p + p {
+        margin: 0;
+      }
+      &__pres {
+        h2 {
+          color: coral;
+          letter-spacing: 0px;
+                -webkit-margin-before: 1rem;
+          // font-size: 1.2rem;
+          @media (min-width: 1000px) {
+            text-align: start;
+          }
+        }
+        p {
+          color: #5c5b5b;
+        }
+      }
+      // &__titre {
+  
+      // }
+  }
+  
+  .offreBlock__APP {
+    @media (min-width: 1000px) {
+      display: flex;
+    }
+  }
+  
+  // ONGLETS INFORMATION OFFRE
+  section.detailsOffreBlock {
+    margin: 3em auto 0;
+    color: coral;
+    padding: 5em 0;
+    left: calc(50% - 50vw);
+    width: 100vw;
+  }
+  
+  .detailsOffreBlock ul {
+    list-style: none;
+  }
+  .detailsOffreBlock li {
+    margin: 0;
+    padding: 0.5rem 0;
+  }
+  .detailsOffreBlock li div {
+    display: none;
+  }
+  .detailsOffreBlock li.on div {
+    display: block;
+  }
+  .detailsOffreBlock li.on h2:after {
+    content: "\f068";
+    position: absolute;
+    top: -3px;
+    right: 0;
+    transform-origin: center;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 600;
+  }
+  .detailsOffreBlock {
+    padding: 1.3rem 0;
+    color: #5c5b5b;
+    @media (min-width: 1000px) {
+      padding-top: 3.3rem;
+    }
+    h2 {
+      font-size: 150%;
+    }
+    &__content h2 {
+      font-size: 150%;
+    }
+    &__single {
+      padding: 1rem 0;
+      width: var(--col-10);
+      @media (min-width: 1000px) {
+        width: var(--col-8);
+      }
+      &__legende {
+        font-style: italic;
+        color: #9e9e9e;
+      }
+      &__list:before {
+        content: "";
+        display: block;
+        width: 6px;
+        height: 11px;
+        background: coral;
+        border-radius: 7px 0px 0px 7px;
+        position: absolute;
+        top: 13px;
+        // left: 8px;
+      }
+      &__list {
+        margin-left: 20px;
+      }
+      &__list p {
+        margin-left: 13px;
+      }
+    }
+    h2 {
+      margin: 0;
+      color: coral;
+      font-weight: 500;
+      padding-right: 2rem;
+      // font-size: 120%;
+    }
+    h2:after {
+      content: "\f067";
+      position: absolute;
+      top: -3px;
+      right: 0;
+      transform-origin: center;
+      font-family: "Font Awesome 5 Free";
+      font-weight: 600;
+    }
+  }
+  
+  @media (max-width: 1400px) {
+    section.detailsOffreBlock {
+      padding: 1.5em 0 1em;
+    }
+    .detailsOffreBlock ul {
+      list-style: none;
+      padding-right: 3rem;
+    }
+  }
+  
+  @media (max-width: 1000px) {
+    section.detailsOffreBlock {
+      padding: 2em 0 1em;
+    }
+    .detailsOffreBlock ul {
+      padding: 0;
+    }
+    .detailsOffreBlock li {
+      //
+    }
+  }
+  
+  .zoneBlockOffre {
+    padding-top: 7rem;
+    h2 {
+      font-family: Fleya;
+      text-transform: none;
+      color: #ff4750;
+      font-weight: 600;
+    }
+    .zoneBlock__single__text p {
+      color: #5c5b5b;
+    }
+  }
+
+
+  // GRID
+
+  .offreBlockGrid {
+    display: grid; 
+  grid-template-columns: 50% 50%; 
+  grid-template-rows: auto auto auto auto; 
+  gap: 1em 1em; 
+  grid-template-areas: 
+    "offreBlockGrid_one offreBlockGrid_two"
+    "offreBlockGrid_tree offreBlockGrid_tree"
+    "offreBlockGrid_for offreBlockGrid_five"
+    ". ."; 
+}
+  .offreBlockGrid_one { 
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+  .offreBlockGrid_one { grid-area: offreBlockGrid_one; }
+  .offreBlockGrid_two { grid-area: offreBlockGrid_two; }
+  .offreBlockGrid_tree { grid-area: offreBlockGrid_tree; }
+  .offreBlockGrid_for { grid-area: offreBlockGrid_for; }
+  .offreBlockGrid_five { grid-area: offreBlockGrid_five; }
+  .offreBlockGrid_six { grid-area: offreBlockGrid_six; }

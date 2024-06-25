@@ -1,0 +1,130 @@
+.percentCircle {
+  stroke-dasharray: 267;
+  stroke-dashoffset: 267;
+  transition: 0.4s;
+}
+
+.diagrammes {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  & > * {
+    width: var(--col-6);
+    @media (max-width: 600px) {
+      width: var(--wrapper);
+    }
+  }
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    @media (max-width: 600px) {
+      max-width: 400px;
+      margin: 0 auto;
+    }
+  }
+  &__single {
+    width: 90px;
+    height: 90px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 14px;
+    margin-bottom: 14px;
+    padding: 10px;
+    @for $i from 1 through 21 {
+      &:nth-child(#{$i}) {
+        .percentCircle {
+          transition-delay: ($i * 100ms) + 200ms;
+        }
+      }
+    }
+    svg {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    &__text {
+      color: $blue;
+      text-align: center;
+      line-height: 1.2;
+    }
+    .name {
+      font-family: "Fleya";
+      font-size: 14px;
+      margin-top: 2px;
+    }
+    .info {
+      font-size: 10px;
+      margin: 0;
+      line-height: 1;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .gutenbergSection > .submenuSiblings + .diagrammes {
+    margin-top: -2em;
+  }
+  .diagrammes__text {
+    margin-top: 1em;
+  }
+  .diagrammes__single {
+    margin: 7px;
+  }
+}
+
+// NEW DIAGRAMMES
+section.newDiagrammes {
+  display: flex;
+  flex-flow: row nowrap;
+  margin-top: 2rem;
+}
+
+.single-chart {
+  width: 100%;
+  justify-content: space-around;
+}
+
+.circular-chart {
+  display: block;
+  margin: auto;
+  @media (min-width: 1000px) {
+    max-width: 80%;
+  }
+}
+
+.circle-bg {
+  fill: none;
+  stroke: #eee;
+  stroke-width: 1.8;
+}
+
+.circle {
+  fill: none;
+  stroke-width: 2;
+  stroke-linecap: round;
+  animation: progress 1s ease-out forwards;
+}
+
+@keyframes progress {
+  0% {
+    stroke-dasharray: 0 100;
+  }
+}
+
+.nom {
+  fill: #666;
+  text-anchor: middle;
+  font-size: 30%;
+  font-family: avenir;
+}
+
+.ligne {
+  fill: #666;
+  text-anchor: middle;
+  font-size: 30%;
+  font-family: fleya;
+}

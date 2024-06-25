@@ -1,0 +1,79 @@
+{
+    "key": "group_621799bf0dadf",
+    "title": "Presse",
+    "fields": [
+        {
+            "key": "field_62179b09d342b",
+            "label": "Date",
+            "name": "date",
+            "type": "date_picker",
+            "instructions": "Date de parution de l'article",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "display_format": "d\/m\/Y",
+            "return_format": "d\/m\/Y",
+            "first_day": 1
+        },
+        {
+            "key": "field_62179bafd342c",
+            "label": "Lien",
+            "name": "lien",
+            "type": "text",
+            "instructions": "Lien vers l'article ou la vidéo",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "https:\/\/www.exemple",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_62179bf1d342d",
+            "label": "Paragraphe",
+            "name": "paragraphe",
+            "type": "text",
+            "instructions": "Première lignes de l'article, ou description de la vidéo",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": 100
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "presse"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "modified": 1646127862
+}

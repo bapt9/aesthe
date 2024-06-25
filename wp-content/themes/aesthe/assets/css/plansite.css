@@ -1,0 +1,20 @@
+.plan .page_item {
+  font-family: Fleya;
+  font-weight: 400;
+  color: #061ca6;
+  letter-spacing: -1px;
+  text-transform: initial;
+  font-size: 20px;
+}
+
+.plan .page_item_has_children .children {
+  font-family: Fleya;
+  font-weight: 300;
+  text-transform: initial;
+  margin-left: 1rem;
+  list-style-type: disc;
+}
+
+.plan {
+  margin-bottom: 1rem;
+}

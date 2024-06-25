@@ -1,0 +1,135 @@
+
+
+.testiBlock { height: 23rem; width:  100vw; left: calc(50% - 50vw); margin: 7em auto 3.5em; color: $blue;}
+.testiBlock h2{ font-weight: 700; letter-spacing: 2px; margin-bottom: 25px; }
+.testiBlock__sliderWrap.big  { left: 40vw; width: 32vw }
+.testiBlock__sliderWrap { left:42vw; width: 30vw}
+@media(min-width: 1400px){
+	.testiBlock.big { margin: 15vw auto 15vw;  }
+}
+.testiBlock__slide :first-of-type { font-size: 1.5vw; text-transform: uppercase; letter-spacing: 2px; }
+.testiBlock__name { display: flex; align-items: center;  margin: 10px 0 20px 0;font-weight: bold; font-size: 70%; text-transform: uppercase; }
+.testiBlock__name:after { content: ''; display: block; width: 70px; height: 70px; background: $blue; border-radius: 100%; margin-left: 70px; }
+.testiBlock .tns-nav { display: flex; margin: 0 0 30px ; justify-content: flex-start;}
+.testiBlock .tns-nav button { width: 8px; height: 8px; border-radius: 50%; display: block; background: $nude }
+.testiBlock .tns-nav button + button { margin: 0 0 0 8px }
+.testiBlock button.tns-nav-active { background: $blue }
+
+.testiBlock .circle { width: 20vw; height: 20vw; overflow: hidden }
+.circle--purple { top:  12vw; left: -2vw;  z-index: 1 }
+.circle--purple::before { transform: translateX(-3vw) }
+.circle--coral { top:  -15vw; right: 0 }
+.circle--coral::before { transform: translateX(3vw) }
+
+
+.testiBlock:not(.big) .circle:first-of-type {  top:  14vw; left:  -2vw;  z-index: 2; }
+.testiBlock:not(.big) .circle:nth-of-type(2) {  top:  -2vw; right:  0;  }
+
+.testiBlock__imgWrap { width: 100%; position: absolute; top: 0; left: 0; }
+.testiBlock__img { position: absolute; object-fit: cover }
+.testiBlock__img--0 { z-index: 3; top: -4vw; left: 0; width: 10vw; height: 25vw }
+.testiBlock__img--1 { top: -8vw; left: 13vw; width: 11vw; height: 15vw }
+.testiBlock__img--2 { top: -4vw; left: 27vw; width: 8vw; height: 11vw }
+.testiBlock__img--3 { top: 10vw; left: 13vw; width: 18vw; height: 25vw }
+.testiBlock__img--4 { top: -4vw; right: 8vw; width: 17vw; height: 25vw }
+.testiBlock__img--5 { top: -8vw; right: 0vw; width: 5vw; height: 15vw }
+.testiBlock__img--6 { top: 10vw; right: 0vw; width: 5vw; height: 25vw }
+
+
+
+.testiBlock:not(.big) .testiBlock__img--0 { top:  6vw; height: 15vw }
+.testiBlock:not(.big) .testiBlock__img--1 { top:  2vw; left:  13vw; width: 13vw; height: 8vw }
+.testiBlock:not(.big) .testiBlock__img--2 { top:  4vw; left: 29vw;width: 10vw; height: 6vw }
+.testiBlock:not(.big) .testiBlock__img--3 { top: 13vw; width: 20vw; height:  14vw; }
+.testiBlock:not(.big) .testiBlock__img--4 { top:  6vw; width:  18vw;height: 13vw }
+.testiBlock:not(.big) .testiBlock__img--5 { top: 2vw; height: 10vw }
+.testiBlock:not(.big) .testiBlock__img--6 { top: 15vw; height: 10vw }
+
+
+
+@media(max-width: 1400px){
+	.testiBlock__imgWrap { top: calc(100% - 35vw); }
+}
+
+
+@media(max-width: 1200px){
+	.testiBlock__slide :first-of-type { font-size: 100%; }
+	.testiBlock__imgWrap { top: 0; }
+	.testiBlock__name:after { width: 50px; height: 50px; }
+	.testiBlock__sliderWrap.big  { left: 40vw; width: 32vw ; }
+	.testiBlock__sliderWrap { left:28vw; width: 44vw;  height : 55vh}
+
+	.testiBlock .circle--purple {  top:  -3vw; left:  -1vw;  z-index: 0 }
+	.testiBlock:not(.big) .circle--purple { z-index: 0; }
+	.testiBlock h2 { font-size: 140%}
+	
+	.testiBlock__img--0 { display: none;}
+	.testiBlock__img--1 { top: -8vw; left: 0vw; width: 11vw; height: 15vw }
+	.testiBlock__img--2 { top: -4vw; left: 14vw; width: 8vw; height: 11vw }
+	.testiBlock__img--3 { top: 10vw; left: 0vw; width: 18vw; height: 25vw }
+
+
+	.testiBlock:not(.big) .testiBlock__img--0 { display: none; }
+	.testiBlock:not(.big) .testiBlock__img--1 { top:  2vw; left: 0; width: 13vw; height: 8vw }
+	.testiBlock:not(.big) .testiBlock__img--2 { top:  4vw; left: 15vw;width: 10vw; height: 6vw }
+	.testiBlock:not(.big) .testiBlock__img--3 { top: 13vw; width: 20vw; height:  14vw; }
+
+}
+
+
+
+
+@media(max-width: 800px){
+	.testiBlock__sliderWrap { left: 10vw; width: 80vw; display: flex; flex-direction: column; align-items: center;}
+
+	.testiBlock__name, .testiBlock .tns-nav { justify-content: center; }
+	.testiBlock .tns-nav { margin: 0 0 30px; }
+	.testiBlock__name:after { display: none; }
+
+
+
+	.testiBlock__imgWrap { position: relative; margin: 160px auto 0;  height: 75vw; }
+	.testiBlock__img { position: absolute; }
+	.testiBlock__img--4, .testiBlock__img--5, .testiBlock__img--6 { display: none; }
+	.testiBlock__img--0, .testiBlock:not(.big) .testiBlock__img--0 { display: block; z-index: 2; top: 8vw; left: 0; width: 40vw; height: 60vw }
+	.testiBlock__img--1, .testiBlock:not(.big) .testiBlock__img--1 { z-index: 4; top: 18vw; left: auto; right: 0; width: 34vw; height: 50vw }
+	.testiBlock__img--2, .testiBlock:not(.big) .testiBlock__img--2  { z-index: 1; top: 0; left: 40vw;  width: 40vw; height: 45vw }
+	.testiBlock__img--3, .testiBlock:not(.big) .testiBlock__img--3 { z-index: 3;top: auto; bottom: 0; left: 26vw; width: 45vw;  height: 53vw }
+
+	.testiBlock .circle { width: 40vw; height: 40vw; }
+	.testiBlock .circle::before { transform: translateX(0); }
+	.testiBlock .circle--purple { top:  -10vw; right: 7vw; bottom: auto; left:auto;  z-index: 1; }
+	.testiBlock .circle--coral {  top: 54vw; right: auto; left: 7vw; }
+
+}
+
+@media(max-width: 600px){
+
+	.testiBlock { margin: 1.5em auto; height: 17rem }
+
+	.testiBlock__sliderWrap { left: var(--leftMargin); width: var(--wrapper); }
+	.testiBlock__slide :first-of-type { font-size: 100%; }
+
+	.testiBlock__imgWrap {  margin-top: 80px; height: 100vw; display: none }
+	.testiBlock__img--3, .testiBlock:not(.big) .testiBlock__img--3 { display: none; }
+	.testiBlock__img--0, .testiBlock:not(.big) .testiBlock__img--0 {  z-index: 2; top: 2vw; left: 0; width: 58vw; height: 86vw }
+	.testiBlock__img--1, .testiBlock:not(.big) .testiBlock__img--1  { z-index: 4; top: 22vw; left: auto; right: 0;  width: 50vw; height: 70vw }
+	.testiBlock__img--2, .testiBlock:not(.big) .testiBlock__img--2  { z-index: 3; top: auto; bottom: 0; left: 10vw; width: 50vw; height: 60vw }
+
+	.testiBlock .circle--coral {  top: 80vw; right: auto; left: -5vw; }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

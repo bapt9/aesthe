@@ -1,0 +1,58 @@
+.consultationBlock {
+    &__Droite {
+        z-index: 1;
+        display : flex !important;
+        flex-direction: row-reverse;
+        padding : 2rem 0;
+        gap : 3rem;
+        @media (max-width: 1000px){
+            flex-wrap: wrap;
+        }
+    }
+    &__Gauche {
+        z-index: 1;
+        display : flex !important;
+        flex-direction: row;
+        padding : 2rem 0;
+        gap : 3rem;
+        @media (max-width: 1000px){
+            flex-wrap: wrap;
+        }
+    }
+    &__imgWrap {
+        width : 50%;
+        height: 21rem;
+        @media (max-width: 1000px){
+            width : 100%;
+        }
+    }
+    &__content {
+        &__Droite {
+        width : 50%;
+        text-align: end;
+        h2 {
+            color: coral;
+        }
+        p {
+            color: $greytext;
+        }
+        @media (max-width: 1000px){
+            width : 100%;
+            text-align: start;
+        }
+    }
+    &__Gauche {
+
+        width : 50%;
+        h2 {
+            color: coral;
+        }
+        p {
+            color: $greytext;
+        }
+        @media (max-width: 1000px){
+            width : 100%;
+        }
+    }
+    }
+}

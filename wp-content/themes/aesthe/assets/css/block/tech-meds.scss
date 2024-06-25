@@ -1,0 +1,120 @@
+.techMeds{
+  &Wrapper{
+    width: 100vw;
+    left: calc(50% - 50vw);
+    position: relative;
+    .tns-nav{
+      display: none;
+    }
+    .tns-outer{
+    }
+    .tns-inner{
+      padding: 60px 0;
+      @media (max-width: 1400px) {
+        padding: 40px 0 ;
+      }
+    }
+    .controls-container{
+      position: unset;
+    }
+    .prev, .next{
+      width: 70px;
+      height: 70px;
+      position: absolute;
+      cursor: pointer;
+      z-index: 7;
+      top: 50%;
+      transition: .2s
+    }
+    .prev {
+      left: var(--leftMargin);
+      transform: rotate(180deg) translate(-50%, -50%);
+      @media (max-width: 1000px) { transform: rotate(180deg) translate(-100%,-50%) }
+      @media (max-width: 600px) {
+        display: none;
+      }
+    }
+    .next{
+      right: calc(var(--leftMargin));
+      transform: translate(50%, -50%);
+      @media (max-width: 1000px) { transform: translate(0,-50%) }
+    }
+  }
+  &Slide{
+    //padding-right: var(--gutter);
+  }
+  &Grid{
+    display: grid; 
+    grid-template-columns: var(--col-3) var(--col-3); 
+    grid-gap: var(--gutter);
+    @media (max-width: 1200px) {
+      grid-template-columns: var(--col-4) var(--col-4) var(--col-4);
+    }
+    @media (max-width: 800px) {
+      grid-template-columns: var(--col-6) var(--col-6);
+    }
+    @media (max-width: 500px) {
+      display: block;
+      grid-template-columns: unset;
+      grid-gap: unset
+    }
+  }
+}
+
+
+.techMedsSlide--endFix { width: var(--leftMargin);
+  @media (max-width: 600px) {
+    display: none!important;
+  }
+}
+
+.techMedsBlock.is-slideshow .card { width:  300px; height: 400px;
+  max-width: 100%; }
+.techMedsSlideshow { padding: 0 var(--leftMargin) }
+
+@media (max-width: 600px) {
+  .techMedsBlock.is-slideshow .card { width:  280px; height: 375px }
+}
+
+.techMedsWrapper [aria-disabled="true"] { opacity: 0; pointer-events: none}
+
+.techMedsWrapper + .wp-block-buttons { }
+
+
+
+body.home .techMedsBlock { margin: 1.5em auto 1.5em }
+.gutenbergSection > .techMedsBlock { margin-top: 5em }
+.gutenbergSection > h2 + .techMedsBlock { margin-top: 2em }
+.techMedsBlock + * { margin-top: 3em; }
+.techMedsBlock + .wp-block-buttons { margin-top: 1em; }
+.techMedsSlide .card { width: auto }
+
+@media (max-width: 600px) {
+  .techMedsBlock .controls-container { display: none }
+  .techMedsBlock { left: calc(50% - 50vw); width: 100vw; margin: 1.5em auto 1.5em }
+  body.home .techMedsBlock { margin: 0 auto 1.5em }
+
+
+  .techMedsGrid {overflow-x: scroll; display: block; white-space: nowrap}
+  .techMedsGrid > * {  white-space: initial }
+  .techMedsGrid::-webkit-scrollbar { display: none}
+
+  .techMedsGrid > article { display: inline-flex; margin: 0 30px 0 0 }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

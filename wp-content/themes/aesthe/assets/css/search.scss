@@ -1,0 +1,60 @@
+.searchPage {
+    &__title {
+        color: grey;
+        // font-weight: 500;
+        font-size: 1.2rem;
+        text-align: center;
+    span {
+        font-style: italic;
+        font-weight: 500;
+    }
+    }
+    &__cardConsult {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row-reverse;
+        margin: 3rem 0;
+        @media (max-width : 1000px) {
+            flex-direction: column;
+            margin: 2rem 0;
+        }
+    }
+    &__cardsTech-med,
+    &__articlesResult {
+        h2 {
+            display: flex;
+            justify-content: center;
+            text-transform: uppercase;
+            color: black;
+            padding-top: 2rem;
+            font-weight: 500;
+            color: #ff4750;
+            margin:0;
+        }           
+    }
+}
+
+.texteExplicatif {
+    width: 30%;
+    margin: 3rem;
+    color: #686868;
+    @media (max-width : 1000px) {
+        width: 90%;
+        margin: 0;
+        margin-bottom: 1rem;
+    }
+}
+
+section.wrapper.searchPage__articlesResult {
+    @media (min-width : 600px) {
+        width: 70%;
+    }
+}
+
+.searchPage{
+    .cardNew__slide__1 {
+    background-image: url('https://cdn-dfbea.nitrocdn.com/NdxaSnNKSkHZYWYGbBmGvygOKEqLsJWq/assets/static/optimized/rev-9cb591a/wp-content/uploads/Capture-de%CC%81cran-2021-09-06-a%CC%80-19.08-57.jpg');
+    background-size: cover;
+        }
+}

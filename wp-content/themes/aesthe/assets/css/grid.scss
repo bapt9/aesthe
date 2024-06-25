@@ -1,0 +1,54 @@
+
+/* pam dev */
+.dev * { box-shadow: inset 0 0 1px #000; }
+.grid { display: none; pointer-events: none }
+.dev .grid { display: block; z-index: 999; position: fixed; top: 0; left: var(--leftMargin); width: var(--wrapper); height: 100vh; }
+.dev .grid ul { list-style: none; display: flex; flex-direction: row; justify-content: space-between; width: 100%; height: 100%; }
+.dev .grid li { width: var(--col); height: 100%; background: rgba(255,0,0,0.2); border: 0!important }
+.dev .grid li + li { margin: 0 0 0 var(--gutter) }
+
+
+
+:root {
+    --wrapper: 1300px;
+    --gutter: 40px;
+    --leftMargin: calc((100vw - var(--wrapper))/2);
+    --col: calc((var(--wrapper) - 11*var(--gutter))/12);
+    --col-2: calc(var(--col)*2 + var(--gutter));
+    --col-3: calc(var(--col)*3 + 2*var(--gutter));
+    --col-4: calc(var(--col)*4 + 3*var(--gutter));
+    --col-5: calc(var(--col)*5 + 4*var(--gutter));
+    --col-6: calc(var(--col)*6 + 5*var(--gutter));
+    --col-7: calc(var(--col)*7 + 6*var(--gutter));
+    --col-8: calc(var(--col)*8 + 7*var(--gutter));
+    --col-9: calc(var(--col)*9 + 8*var(--gutter));
+    --col-10: calc(var(--col)*10 + 9*var(--gutter));
+    --col-11: calc(var(--col)*11 + 10*var(--gutter));
+}
+@media (max-width: 1450px) { :root { --wrapper: calc(100vw - 150px) } }
+@media (max-width: 1150px) { :root { --wrapper: calc(100vw - 100px) } }
+@media (max-width: 1000px) { :root { --wrapper: calc(100vw - 60px); --gutter: 30px } }
+@media (max-width: 600px) { :root { --wrapper: calc(100vw - 40px); --gutter: 20px } }
+
+
+
+
+/* pour utilisateurs sur Gutenberg */
+
+.deux_colonnes img { width: var(--col-2); height: auto }
+.trois_colonnes img { width: var(--col-3); height: auto }
+.quatre_colonnes img { width: var(--col-4); height: auto }
+.cinq_colonnes img { width: var(--col-5); height: auto }
+.six_colonnes img { width: var(--col-6); height: auto }
+.sept_colonnes img { width: var(--col-7); height: auto }
+.huit_colonnes img { width: var(--col-8); height: auto }
+.neuf_colonnes img { width: var(--col-9); height: auto }
+.dix_colonnes img { width: var(--col-10); height: auto }
+.onze_colonnes img { width: var(--col-11); height: auto }
+
+
+
+
+
+
+

@@ -1,0 +1,38 @@
+
+
+
+.centre { color: $blue; margin: auto; z-index: 2 }
+// .centre .cta:after { top: calc(50% - 10px) }
+.centre__cover:before { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.2); z-index: 2 }
+.centre__cover .h2 { z-index: 3; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 100%;  text-align: center; text-transform: uppercase; color: #fff; max-width: none }
+.centre__main { background:  $nude; padding:  var(--gutter); display: flex }
+.centre__main div:first-of-type { padding-right: 40px }
+.centre__main h2 { text-transform: initial; letter-spacing: -1px; margin: 0 0 0.5em 0 }
+.centre__imgWrap { display: flex; justify-content: center; }
+.centre__imgWrap > a > img { mix-blend-mode: multiply}
+.centre__main img { margin: 0 10px; width: var(--col-3); height: var(--col-3); border-radius:  50%}; 
+.centre__main .cta { margin-top: 20px;};
+.ctaWrap { padding: 0.5em 0;  }
+
+@media(max-width: 1000px) {
+	// .centre { width: 100vw; margin: auto }
+	.centre__cover {  height: 60vw; }
+	.centre__main {padding:  var(--leftMargin); align-items: center;}
+	.centre__cover .h2 { padding: 0 10vw }
+	.centre__cover .h2 br { display: none; }
+	.centre__imgWrap { flex-direction: column;}
+	.centre__main img:first-of-type { z-index: 2 }
+	.centre__main img { margin-bottom: 10px }
+}
+
+@media(max-width: 600px) {
+	.centre__cover {  height: 80vw; }
+	.centre__main { flex-direction: column }
+	.centre__main h2 { margin: 0.5em 0; }
+	.centre__imgWrap { margin: 1.5em 0 0;}
+	.centre__main img { width: var(--col-10); height: var(--col-10) }
+	.centre__imgWrap > img { display: none }
+}
+
+
+

@@ -1,0 +1,37 @@
+.formulaire {
+    &__header {
+        display: flex;
+        justify-content: center;
+        height: 12rem;
+        img {
+            width: 25%;
+        }
+    }
+    &__body {
+        background-color: #fff5ed;
+    }
+    p {
+        margin-left: 23px;
+        color: $greytext;
+    }
+    .submenuSiblings {
+        h1 {
+            font-family: fleya;
+            font-weight: 600;
+            color: $npurple;
+            margin-left: 23px;
+        }
+    }
+}
+
+.page-formulaire,
+.page-template-formulaire {
+    background-color: #fff5ed;
+}
+
+h2#comment-prendre-soin-de-sa-peau-en-ete {
+    font-family: fleya;
+    font-weight: 600;
+    color: $npurple;
+    margin-left: 23px;
+}

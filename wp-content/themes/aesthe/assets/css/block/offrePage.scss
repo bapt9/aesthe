@@ -1,0 +1,223 @@
+.topOffre.wrapper.topOffre__top {
+  @media (max-width: 1000px) {
+    // width: 100vw;
+    position: relative;
+    // left: calc(50% - 50vw);
+    height: 13rem;
+    overflow: clip;
+    margin: 0;
+  }
+}
+
+.topOffre__top {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 3rem;
+
+  @media (max-width: 1000px) {
+    flex-direction: column;
+    padding-bottom: 0;
+  }
+}
+
+// .gutenbergSection.wrapper .topOffre__imgWrap {
+//   @media (max-width: 1000px) {
+//     width: 100vw;
+//     position: relative;
+//     left: calc(50% - 50vw);
+//     height: 13rem;
+//   }
+// }
+
+.topOffre {
+  &__autresTechs {
+    margin: 2rem auto;
+    h2 {
+      font-size: 150%;
+      @media (max-width: 800px) {
+        position: relative;
+        margin: 0 auto;
+        width: var(--wrapper);
+      }
+    }
+  }
+  &__consultation {
+    z-index: 1;
+  }
+  &__rond {
+    &__web {
+      display: none;
+      @media (min-width: 1000px) {
+        display: block;
+        position: absolute;
+        left: 56rem;
+        bottom: 117px;
+        width: 400px;
+        height: 400px;
+        background-color: #fff5ed;
+        border-radius: 50%;
+        right: -5rem;
+      }
+    }
+    &__smartphone {
+      position: absolute;
+      left: -145px;
+      bottom: 7px;
+      width: 300px;
+      height: 300px;
+      background-color: $nude;
+      border-radius: 50%;
+      @media (min-width: 1000px) {
+        display: none;
+      }
+    }
+  }
+  &__imgWrap {
+    @media (min-width: 1000px) {
+      height: 28rem;
+      padding-right: 2rem;
+      padding-top: 2rem;
+      width: 50%;
+    }
+  }
+  &__titre {
+    padding-top: 2rem;
+    overflow: hidden;
+    @media (min-width: 1000px) {
+      height: 30rem;
+      padding-left: 2rem;
+      width: 50%;
+    }
+  }
+  &__titre h1 {
+    color: coral;
+    padding-right: 2rem;
+    font-family: "Avenir LT Std";
+    text-transform: uppercase;
+    margin: 0;
+  }
+  h1 {
+    font-size: 1.8rem;
+  }
+  .tns-nav {
+    display: none;
+  }
+  &__controls {
+    li {
+      text-transform: uppercase;
+      list-style: none;
+      cursor: pointer;
+      color: white;
+      background-color: coral;
+      padding: 4px 10px 1px 9px;
+      margin: 0 0.4rem 0.4rem 0;
+      font-size: 110%;
+      @media (max-width: 1450px) {
+      }
+      @media (max-width: 1000px) {
+      }
+      @media (max-width: 600px) {
+      }
+      &:not(.active) {
+        color: coral;
+        background-color: white;
+        border: 1.5px solid coral;
+        font-weight: 400;
+
+        @media (max-width: 1000px) {
+          text-decoration: none;
+        }
+      }
+    }
+    &__container {
+      ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: stretch;
+      }
+      span {
+        color: #9e9e9e;
+        // font-size: 14px;
+      }
+      @media (max-width: 1000px) {
+        //
+      }
+    }
+  }
+  &__content {
+    p {
+      color: #5c5b5b;
+      margin: 0;
+      letter-spacing: 0px;
+    }
+  }
+  &__single {
+    &__button {
+      color: white;
+      background-color: coral;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      z-index: 4;
+      height: 3.5rem;
+      padding: 19px;
+      text-transform: uppercase;
+      // padding: 26px;
+      display: none;
+      font-weight: 500;
+      font-size: 1.2rem;
+      @media (max-width: 1000px) {
+        text-align: center;
+        left: calc(50% - 50vw);
+      }
+      @media (min-width: 1000px) {
+        position: absolute;
+        height: 3.5rem;
+        text-transform: uppercase;
+        padding: 12px;
+        bottom: 32px;
+      }
+      &.on {
+        display: block;
+        @media (min-width: 1000px) {
+          display: flex;
+          justify-content: center;
+          font-size: 110%;
+        }
+      }
+    }
+    &__tarif {
+      font-weight: bold;
+    }
+    &__titre {
+      font-weight: lighter;
+      text-transform: uppercase;
+    }
+  }
+  p + p {
+    margin: 0;
+  }
+  &__pres {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    color: $greytext;
+    padding-top: 1rem;
+    @media (min-width: 1000px) {
+      padding-top: 0;
+      padding-left: 1rem;
+    }
+    h2 {
+      color: coral;
+      letter-spacing: 0px;
+    }
+    p {
+      margin: 0 !important;
+    }
+  }
+}
+
+.topOffre__single__legende {
+  font-style: italic;
+  color: $greylight !important ;
+}

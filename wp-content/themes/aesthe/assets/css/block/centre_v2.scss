@@ -1,0 +1,103 @@
+section.centreBackground {
+    background-image: url("assets/img/background_centre.jpg");
+    background-size: cover;
+    background-position: left;
+    margin: 1rem 0;
+    z-index: 3;
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+    @media (max-width: 1000px) {
+        height: 11rem;
+    }
+}
+
+.centre {
+    display: flex;
+    justify-content: center;
+    &__liens {
+        padding: 0rem 1rem 2rem 1rem;
+        color: white;
+        a {
+            padding-bottom: 2px;
+            border-bottom: 2px solid white;
+        }
+        @media (min-width: 1000px) {
+            display: none;
+        }
+        &__web {
+            display: none;
+            @media (min-width: 1000px) {
+                display: block;
+                padding-top: 13px;
+                a {
+                    padding-bottom: 2px;
+                    border-bottom: 1px solid $greytext;
+                    &:hover {
+                        border-bottom: 0px;
+                    }
+                }
+            }
+        }
+    }
+    &__informations {
+        color: $greytext;
+        display: flex;
+        width: 70%;
+        padding: 2rem 1rem 2rem 1rem;
+        @media (max-width: 1000px) {
+            flex-direction: column-reverse;
+            width: inherit;
+            padding: 2rem 1rem 0rem 1rem;
+        }
+        &__map {
+            width: 50%;
+            @media (max-width: 1000px) {
+                width: inherit;
+            }
+        }
+        &__horraires {
+            margin-top: 10px;
+        }
+        &__acces {
+            margin-top: 10px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid $greymiddle;
+        }
+        &__texte {
+            width: 50%;
+            @media (max-width: 1000px) {
+                padding: 1.5rem 1.5rem 10px 1.5rem;
+                width: inherit;
+            }
+            padding: 1.5rem 1.5rem 1.5rem 1.5rem;
+            background-color: white;
+        }
+        &__contact {
+            border-bottom: 2px solid $greymiddle;
+            h1 {
+                justify-content: center;
+                text-align: center;
+                font-size: 130%;
+                font-family: inherit;
+                color: $greytext;
+                letter-spacing: inherit;
+                max-width: inherit;
+            }
+            h2 {
+                color: $greytext;
+                font-family: Fleya;
+                font-weight: 600;
+                text-transform: initial;
+                letter-spacing: inherit;
+                font-size: 1.5rem;
+            }
+            p {
+                margin-bottom: 10px;
+                font-size: 130%;
+            }
+        }
+    }
+}

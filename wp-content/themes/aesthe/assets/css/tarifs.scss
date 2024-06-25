@@ -1,0 +1,125 @@
+.slug-tarifs h1 {
+  margin: 25px 0 0;
+}
+
+.tarifs__infos h3 {
+  font-weight: 400;
+  font-size: 150%;
+  line-height: 1.3;
+  color: #061ca6;
+}
+
+.tarifsBlock {
+  margin: 0;
+  clear: both;
+  float: none;
+  &::after {
+    content: "";
+    clear: both;
+    float: none;
+    display: block;
+  }
+}
+.tarifs__offers {
+  &[data-columns]::before {
+    content: "2 .column.size-1of2";
+  }
+}
+
+.size-1of2 {
+  width: var(--col-6);
+  float: left;
+  @media (max-width: 1000px) {
+    width: 100%;
+  }
+  &:first-child {
+    margin-right: var(--gutter);
+    @media (max-width: 1000px) {
+      margin-right: 0;
+    }
+  }
+}
+
+.tarifs__item {
+  background-color: white;
+  border-radius: 4px;
+  filter: drop-shadow(0 0 52px rgba(0, 0, 0, 0.09));
+  padding: 40px 45px 30px;
+  overflow: hidden;
+  margin: 0 0 var(--gutter);
+  width: 100%;
+  @media (max-width: 600px) {
+    padding: 15px 15px 70px;
+  }
+}
+.tarifs__item .circle {
+  width: 230px;
+  height: 230px;
+  bottom: 100%;
+  left: 50%;
+  transform: translate(-50%, 20px);
+  @media (max-width: 600px) {
+    width: 110px;
+    height: 110px;
+    transform: translate(-50%, 10px);
+  }
+}
+
+/* exception aesthe */
+.tarifs__item.epilation-laser .cta {
+  display: none;
+}
+
+.tarifs__infos {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 25px;
+  position: unset;
+  @media (max-width: 600px) {
+    margin: 0 0 22px;
+  }
+}
+.tarifs__infos .cta {
+  flex: none;
+  height: fit-content;
+  @media (max-width: 600px) {
+    position: absolute;
+    bottom: 17px;
+    left: 15px;
+    height: auto;
+  }
+}
+.tarifs__infos > div > p {
+  opacity: 0.6;
+}
+.tarifs__prices li {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  align-items: center;
+  width: calc(100% + 20px);
+  margin-left: -10px;
+  font-size: 14px;
+  a {
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  @media (max-width: 600px) {
+    width: calc(100% + 10px);
+    padding: 5px;
+    margin-left: -5px;
+  }
+}
+.tarifs__prices li p + p {
+  margin: 0;
+}
+.tarifs__prices li:nth-of-type(2n) {
+  background: #f7f4fd;
+}
+
+@media (max-width: 600px) {
+  .slug-tarifs h1 {
+    margin: 25px 0 0;
+  }
+}
