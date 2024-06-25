@@ -1,0 +1,138 @@
+# Translation of Plugins - Headers Security Advanced &amp; HSTS WP - Stable (latest release) in French (France)
+# This file is distributed under the same license as the Plugins - Headers Security Advanced &amp; HSTS WP - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2023-06-18 14:15:23+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: GlotPress/4.0.0-alpha.7\n"
+"Language: fr\n"
+"Project-Id-Version: Plugins - Headers Security Advanced &amp; HSTS WP - Stable (latest release)\n"
+
+#. translators: the placeholder here is the plugin version number.
+#: headers-security-advanced-hsts-wp.php:446
+msgid "Security is a right, not a privilege. Plugin version %s."
+msgstr "La sécurité est un droit, pas un privilège. Version de l’extension %s."
+
+#. translators: the placeholders here are opening and closing <b> tags.
+#: headers-security-advanced-hsts-wp.php:422
+msgid "%1$sThe Headers Security Advanced & HSTS WP%2$s project implements HTTP response headers that your site can use to increase the security of your website. The plug-in will automatically set up all Best Practices (you don’t have to think about anything). You will also be able to change the headers simply in the plugin settings."
+msgstr "%1$sLe projet Headers Security Advanced & HSTS WP%2$s implémente des en-têtes de réponse HTTP que votre site peut utiliser pour augmenter la sécurité de votre site. L’extension configurera automatiquement toutes les meilleures pratiques (vous n’avez à penser à rien). Vous pourrez également modifier les en-têtes simplement dans les réglages de l’extension."
+
+#: headers-security-advanced-hsts-wp.php:416
+msgid "Congratulations, you are safe!"
+msgstr "Félicitations, vous êtes en sécurité !"
+
+#. translators: the placeholders here are opening and closing <b> and <a> tags.
+#: headers-security-advanced-hsts-wp.php:229
+msgid "Enabling \"preload\" further helps prevent any potential man-in-the-middle attacks, thus improving connection security as far as it concerns HSTS. %1$sPlease note%2$s that even if this flag is enabled, your website still needs to be manually submitted to the list. %1$sPlease also note%2$s that inclusion in the preload list has %1$spermanent consequences%2$s and %3$sis not easy to undo%4$s, so you should only enable this flag and submit your website after making sure that all of the resources and services within your domain (and its subdomains, if \"includeSubDomains\" is also enabled) are indeed accessible and functional via HTTPS."
+msgstr "L’activation du « préchargement » aide en outre d’éviter toute attaque potentielle d’indésirable, améliorant ainsi la sécurité de la connexion en ce qui concerne HSTS. %1$s Veuillez noter%2$s que même si cet indicateur est activé, votre site doit toujours être soumis manuellement à la liste. %1$s Veuillez également noter %2$s que l’inclusion dans la liste de préchargement a des %1$sconséquences permanentes%2$s et %3$sn’est pas facile à annuler%4$s, vous ne devez donc activer cet indicateur et envoyer votre site qu’après vous être assuré que toutes les ressources et services de votre domaine (et de ses sous-domaines, si « includeSubDomains » est également activé) sont effectivement accessibles et fonctionnels via HTTPS."
+
+#. translators: the placeholders here are opening and closing <a> tags.
+#: headers-security-advanced-hsts-wp.php:210
+msgid "The \"preload\" flag allows the website to be included in the %1$sHSTS preload list%2$s, which instructs browsers to always use HTTPS connection for the site and its subdomains, without ever making insecure HTTP requests."
+msgstr "L’indicateur « préchargement » permet au site d’être inclus dans la %1$sliste de préchargement HSTS%2$s, qui indique aux navigateurs de toujours utiliser la connexion HTTPS pour le site et ses sous-domaines, sans jamais faire de requêtes HTTP non sécurisées."
+
+#: headers-security-advanced-hsts-wp.php:190
+msgid "We recommend enabling the \"includeSubDomains\" option in the HSTS header to ensure that all subsections of your site (subdomains) are only loaded via HTTPS. However, before enabling this flag, it is important to ensure that all subdomains, resources and web services working under your domain are available via HTTPS and that there are no compatibility issues with any external services used by your site."
+msgstr "Nous vous recommandons d’activer l’option « includeSubDomains » dans l’en-tête HSTS pour vous assurer que toutes les sous-sections de votre site (sous-domaines) ne sont chargées que via HTTPS. Toutefois, avant d’activer cet indicateur, il est important de s’assurer que tous les sous-domaines, ressources et services Web fonctionnant sous votre domaine sont disponibles via HTTPS et qu’il n’y a aucun problème de compatibilité avec les services externes utilisés par votre site."
+
+#: headers-security-advanced-hsts-wp.php:176
+msgid "The \"includeSubDomains\" flag specifies that the effect of the header should also be applied to subdomains of the domain. When this directive is present, all requests to any subdomains of your domain are automatically redirected to the HTTPS protocol, providing enhanced security for the website and the users who visit it."
+msgstr "L’indicateur « includeSubDomains » spécifie que l’effet de l’en-tête doit également être appliqué aux sous-domaines du domaine. Lorsque cette directive est présente, toutes les demandes adressées à des sous-domaines de votre domaine sont automatiquement redirigées vers le protocole HTTPS, offrant une sécurité accrue au site et aux internautes qui le visitent."
+
+#: headers-security-advanced-hsts-wp.php:130
+msgid "Strict Transport Security (HSTS)"
+msgstr "Sécurité stricte du transport (HSTS)"
+
+#: headers-security-advanced-hsts-wp.php:105
+#: headers-security-advanced-hsts-wp.php:437
+msgid "Donate via PayPal"
+msgstr "Faites un don via PayPal"
+
+#: headers-security-advanced-hsts-wp.php:104
+#: headers-security-advanced-hsts-wp.php:434
+msgid "Buy me a coffee"
+msgstr "Offrez-moi un café"
+
+#: headers-security-advanced-hsts-wp.php:158
+msgid "It is advisable to set \"max-age\" to a high value, such as a full year (31536000 seconds). This ensures that browsers continue to store security information for a long period of time, which helps protect users from man-in-the-middle attacks. However, it is important to keep in mind that setting the value too high could cause problems if you need to change your site's SSL configuration in the future. Therefore, it is important to carefully consider your usage and security needs before setting the value."
+msgstr "Il est conseillé de définir « max-age » sur une valeur élevée, telle qu’une année complète (31536000 secondes). Cela garantit que les navigateurs continuent à stocker des informations de sécurité pendant une longue période, ce qui contribue à protéger les utilisateurs contre les attaques de l’homme du milieu. Cependant, il est important de garder à l’esprit que définir la valeur trop élevée peut causer des problèmes si vous devez modifier la configuration SSL de votre site à l’avenir. Par conséquent, il est important d’examiner attentivement vos besoins en matière d’utilisation et de sécurité avant de définir la valeur."
+
+#: headers-security-advanced-hsts-wp.php:144
+msgid "The Max-Age parameter specifies the period of time (in seconds) for which the browser should store the HSTS information. During this time period, the browser will always use HTTPS to communicate with the website, even if the visitor has entered \"http\" or an HTTP link in the address bar. This helps protect the website and its visitors from man-in-the-middle (MITM) attacks and other security threats."
+msgstr "Le paramètre Max-Age spécifie la période (en secondes) pendant laquelle le navigateur doit stocker les informations HSTS. Pendant cette période, le navigateur utilisera toujours HTTPS pour communiquer avec le site, même si le visiteur a entré « http » ou un lien HTTP dans la barre d’adresse. Cela permet de protéger le site et ses visiteurs contre les attaques de l’homme du milieu (MITM) et d’autres menaces de sécurité."
+
+#. translators: the placeholders here are opening and closing <b> tags.
+#: headers-security-advanced-hsts-wp.php:93
+msgid "The %1$sHeaders Security Advanced & HSTS WP%2$s security plugin for WordPress is an essential and completely free plugin to protect your WordPress site. %1$sHeaders Security Advanced & HSTS WP%2$s adds security headers quickly to your site to protect it from threats such as phishing attacks, data theft and more. %1$sHeaders Security Advanced & HSTS WP%2$s is easy to use and allows you to customize the HSTS Preload header to suit your needs. The plugin is compatible with all major browsers and operating systems and can be installed on any WordPress site."
+msgstr "L’extension de sécurité %1$sHeaders Security Advanced & HSTS WP%2$s pour WordPress est une extension essentielle et entièrement gratuit pour protéger votre site WordPress. %1$s Headers Security Advanced & HSTS WP%2$s ajoute rapidement des en-têtes de sécurité à votre site pour le protéger contre les menaces telles que les attaques d’hameçonnage, le vol de données et plus encore. %1$s Headers Security Advanced & HSTS WP%2$s est facile à utiliser et vous permet de personnaliser l’en-tête HSTS Preload en fonction de vos besoins. L’extension est compatible avec tous les principaux navigateurs et systèmes d’exploitation et peut être installé sur n’importe quel site WordPress."
+
+#. translators: the placeholders here are opening and closing <strong> tags.
+#: headers-security-advanced-hsts-wp.php:121
+msgid "%1$sHelp me decide what the next features of this plugin will be!%2$s Take part in a nerdy survey!"
+msgstr "%1$s Aidez-moi à décider quelles seront les prochaines fonctionnalités de cette extension ! %2$s Participez à mon sondage !"
+
+#: headers-security-advanced-hsts-wp.php:107
+msgid "I create projects available to everyone for free and I like to create simple but functional projects."
+msgstr "Je crée des projets accessibles à tous gratuitement et j’aime créer des projets simples mais fonctionnels."
+
+#. translators: the placeholders here are opening and closing <strong> tags.
+#: headers-security-advanced-hsts-wp.php:75
+msgid "%1$sYour website is finally safe! 🚀🚀%2$s Implement enhanced security headers, HSTS preload for optimum website protection."
+msgstr "%1$sVotre site est enfin en sécurité ! 🚀🚀%2$s Intégrez des en-têtes de sécurité améliorés, préchargez HSTS pour une protection optimale du site."
+
+#: headers-security-advanced-hsts-wp.php:139
+msgid "Max-Age: "
+msgstr "Max-Age : "
+
+#: headers-security-advanced-hsts-wp.php:203
+msgid "Preload: "
+msgstr "Préchargement : "
+
+#: headers-security-advanced-hsts-wp.php:171
+msgid "Include Subdomains: "
+msgstr "Inclure les sous-domaines : "
+
+#: headers-security-advanced-hsts-wp.php:128
+msgid "Quick selection:"
+msgstr "Sélection rapide :"
+
+#. translators: the placeholders here are opening and closing <strong> tags.
+#: headers-security-advanced-hsts-wp.php:113
+msgid "%1$sDo you need help with the Headers Security Advanced & HSTS WP plugin?%2$s Don't worry, I've got it covered!"
+msgstr "%1$sAvez-vous besoin d’aide avec l’extension Headers Security Advanced & HSTS WP ? %2$s Ne vous inquiétez pas, je suis là !"
+
+#. translators: the placeholders here are opening and closing <b> tags.
+#: headers-security-advanced-hsts-wp.php:99
+msgid "Please consider buying me a coffee to support my work on this %1$sHeaders Security Advanced & HSTS WP%2$s plugin."
+msgstr "Veuillez envisager de m’acheter un café pour soutenir mon travail sur cette extension %1$sHeaders Security Advanced & HSTS WP%2$s."
+
+#: headers-security-advanced-hsts-wp.php:86
+msgid "Headers Security Advanced & HSTS WP: The security of your website is our priority! 🛸"
+msgstr "Headers Security Advanced & HSTS WP : La sécurité de votre site web est notre priorité ! 🛸"
+
+#. Plugin Name of the plugin
+#: headers-security-advanced-hsts-wp.php:53
+#: headers-security-advanced-hsts-wp.php:54
+#: headers-security-advanced-hsts-wp.php:407
+msgid "Headers Security Advanced & HSTS WP"
+msgstr "Headers Security Advanced & HSTS WP"
+
+#. Plugin URI of the plugin
+msgid "https://www.tentacleplugins.com/"
+msgstr "https://www.tentacleplugins.com/"
+
+#. Author URI of the plugin
+msgid "https://www.linkedin.com/in/andrea-ferro-55046186/"
+msgstr "https://www.linkedin.com/in/andrea-ferro-55046186/"
+
+#: headers-security-advanced-hsts-wp.php:70
+msgid "You do not have sufficient permissions to access this page."
+msgstr "Vous n’avez pas les droits nécessaires pour accéder à cette page."
+
+#. Description of the plugin
+msgid "Headers Security Advanced & HSTS WP - Simple, Light and Fast. The plugin uses advanced security rules that provide huge levels of protection and it is important that your site uses it. This step is important to submit your website and/or domain to an approved HSTS list. Google officially compiles this list and it is used by Chrome, Firefox, Opera, Safari, IE11 and Edge. You can forward your site to the official HSTS preload directory. Cross Site Request Forgery (CSRF) is a common attack with the installation of Headers Security Advanced & HSTS WP will help you mitigate CSRF on your WordPress site."
+msgstr "Headers Security Advanced & HSTS WP - Simple, léger et rapide. L’extension utilise des règles de sécurité avancées qui offrent un fort niveaux de protection et il est important que votre site l’utilise. Cette étape est importante pour soumettre votre site et/ou domaine à une liste HSTS approuvée. Google compile officiellement cette liste et elle est utilisée par Chrome, Firefox, Opera, Safari, IE11 et Edge. Vous pouvez transmettre votre site au répertoire officiel de préchargement HSTS. Cross Site Request Forgery (CSRF) est une attaque courante. L’installation de Headers Security Advanced & HSTS WP vous aidera à atténuer le CSRF sur votre site WordPress."
