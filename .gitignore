@@ -11,12 +11,12 @@
 #/wp-content/plugins/index.php
 #/wp-content/themes/index.php
 /wp-content/images-aesthe.zip
-/wp-includes/
-/index.php
-/license.txt
-/readme.html
-/wp-*.php
-/xmlrpc.php
+#/wp-includes/
+#/index.php
+#/license.txt
+#/readme.html
+#/wp-*.php
+#/xmlrpc.php
 
 # Configuration
 wp-config.php
